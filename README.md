@@ -7,7 +7,7 @@ Not a document dump. A designed database: every fact has one home, every file de
 from and how far it can be trusted, and a routing layer tells any model which files to load for
 which job.
 
-**80 files · 14 folders · 9 topic clusters · 10 channel playbooks · private**
+**81 files · 14 folders · 9 topic clusters · 10 channel playbooks · private**
 
 ---
 
@@ -78,7 +78,7 @@ Every file and every claim carries one:
 
 **One refinement specific to this database.** A claim can be *verified as published* — the website
 demonstrably says it — without being *verified as substantiated*. Files carrying such claims add
-`substantiated: yes | no | partial`. Six live site claims sit in that category by owner decision:
+`substantiated: yes | no | partial`. Five live site claims sit in that category by owner decision:
 usable in OS A.I's own marketing, never in contexts where substantiation will be demanded.
 See [`claims-register.md`](05-proof-and-evidence/claims-register.md).
 

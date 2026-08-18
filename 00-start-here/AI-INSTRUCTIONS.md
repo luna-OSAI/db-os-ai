@@ -67,7 +67,10 @@ No "just for a draft" exception, no "internal only" carve-out.
 | **Anything with a number in it** | **05/claims-register + 06/stats-bank** — and obey the attribution rules in both |
 | **Anything partner-facing** | **07/partner-and-income-claims — currently `draft`, so the answer is: not yet** |
 
-## The ten rules
+## The rules
+
+**Ten here. The nine in [guardrails](../07-compliance-and-guardrails/guardrails.md) are the
+authoritative compliance set — rule 10 below is an operating rule, not a compliance one.**
 
 1. **Never name GoHighLevel client-facing.** Always "OS A.I" or "the platform." And never claim OS A.I built the platform — silence about the vendor is the rule; fabricating provenance is not covered by it.
 2. **Never invent a fact about OS A.I.** No client counts, results, case studies, testimonials, revenue, retention or uptime. **None of these exist.** If asked, say so.
@@ -82,10 +85,13 @@ No "just for a draft" exception, no "internal only" carve-out.
 
 ## The claims exception — read carefully
 
-Six claims published on the live site are **approved for reuse in OS A.I's own marketing**, by owner
-decision (D2): *"Scale Your Business 10× Faster" · "Join 100s of entrepreneurs" · "$50,000+ pre-built
-business kit" · "We cover $5,000/m in plugins" · "Loved By All Industries — All Over The World" ·
-"Save hundreds of hours and thousands of dollars per month."*
+**Five** claims published on the live site are **approved for reuse in OS A.I's own marketing**, by
+owner decision (D2): *"Scale Your Business 10× Faster" · "Join 100s of entrepreneurs" · "$50,000+
+pre-built business kit" · "We cover $5,000/m in plugins" · "Loved By All Industries — All Over The
+World."*
+
+**A sixth site claim — "Save hundreds of hours and thousands of dollars per month" — is NOT approved.**
+It is on the site, it is recorded as C6, and it was not part of the D2 decision. Do not reuse it.
 
 **No source substantiates any of them.** They are `verified` **as published**, not as substantiated.
 
@@ -120,7 +126,7 @@ without wincing?
 06-research-and-market/ EXTERNAL RESEARCH ONLY — HubSpot · landscape · AU context · stats · glossary
 07-compliance-and-guardrails/ guardrails (CRITICAL) · claims policy · ACL · partner claims ·
                      white-label disclosure · approval rules
-08-channels-and-playbooks/ 9 playbooks — blog · website · email · newsletter · SMS · social ·
+08-channels-and-playbooks/ 10 playbooks — blog · website · email · newsletter · SMS · social ·
                      ads · sales · lead magnets · video
 09-content-banks/    hooks · subject lines · CTAs · proof lines · objection turns · offer angles · analogies
 10-faq-and-objections/ canonical FAQ · agent spec · objections by ICP

@@ -36,8 +36,14 @@ publishes **"Scale Your Business 10× Faster"**, **"Join 100s of entrepreneurs"*
 Under Australian Consumer Law, s18 and s29, a business must be able to substantiate performance
 claims. **Not one of those five claims is supported by any document in the source set.** Either
 evidence exists somewhere not supplied, or the site is currently making unsubstantiated claims.
-This is the highest-risk finding in the build and it must be settled before any campaign copy is
-generated. Everything downstream — proof bank, playbooks, article briefs — inherits the answer.
+**Resolved by decision, not by evidence.** Owner decision D2 (2026-08-18) permits reuse of the five
+claims as published, on the basis that more information is coming. That is a legitimate business
+call and it is recorded transparently — but **it settles what copy may say, not whether the claims
+are substantiated.** The evidence gap remains open and is item 2 in the
+[enrichment roadmap](ENRICHMENT-ROADMAP.md).
+
+A sixth site claim — "Save hundreds of hours and thousands of dollars per month" — was **not** part
+of D2 and is not approved for reuse.
 
 ### G3 · The partner program's compliance posture
 

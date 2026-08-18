@@ -38,9 +38,23 @@ Reuse permitted, **in this wording**, in OS A.I's own marketing.
 | C3 | "$50,000+ pre-built business kit" | ✅ live site | ❌ no valuation methodology on file |
 | C4 | "We cover $5,000/m in plugins" | ✅ live site | ❌ no cost breakdown on file |
 | C5 | "Loved By All Industries — All Over The World" | ✅ live site | ❌ no reviews or testimonials on file |
-| C6 | "Save hundreds of hours and thousands of dollars per month" | ✅ live site | ❌ no measurement on file |
 
-**Bounds — these do not travel:**
+
+### C6 — published, but NOT covered by the D2 decision
+
+| # | Claim, as published | Verified | Substantiated | Approved for reuse |
+|---|---|---|---|---|
+| C6 | "Save hundreds of hours and thousands of dollars per month" | ✅ live site | ❌ no measurement on file | **NO — pending decision** |
+
+**The D2 decision named five claims. C6 was not among them.** It is on the live site, so it is
+recorded here for completeness, but it has never been approved for reuse and **must not be used in
+new copy.** It is a savings claim with no measurement on file, which is the category most likely to
+attract a substantiation demand.
+
+To approve it, add it to D2 in [SCHEMA](../00-start-here/SCHEMA.md) explicitly. Until then, C1–C5
+are the approved set.
+
+**Bounds on C1–C5 — these do not travel:**
 
 - ✅ Reuse **as written**, in OS A.I marketing
 - ❌ Never **escalate** — "10× faster" does not become "12×", or "10× faster in 30 days"
@@ -80,6 +94,7 @@ valuation and five reviews would substantiate four of the six.
 | 7-day free trial **that auto-converts to paid unless cancelled** | ✅ Refund Policy | ✅ |
 | Partner payouts 40% / 45%+5% / 50%+30%+10% | ✅ live site | ✅ |
 | Done-for-you builds $2,500–$11,100 setup | ✅ business plan | ⚠️ not published — confirm before quoting |
+| **HubSpot Marketing Hub Professional $890/mo annual + $3,000 onboarding** | ✅ hubspot.com, researched 2026-08-18 | ✅ **UNBLOCKED.** Name the plan and the date. ⚠️ Tier 2 approval |
 
 **The trial claim must always carry the auto-conversion disclosure.** Never split them.
 
@@ -102,7 +117,6 @@ Phrase as OS A.I's view, not as what a buyer will get.
 
 | Claim | Why |
 |---|---|
-| **HubSpot costs $890/month** | Recurs across the source set with **no source and no date**. Blocked until [competitor-hubspot](../06-research-and-market/competitor-hubspot.md) verifies it |
 | **90–95% retention** | Internal target. Publishing a goal reads as an achieved result |
 | **≤7 day onboarding** as a commitment | Internal target, no measured average. Usable as intent only |
 | **5–10 booked calls per week** | OS A.I's own sales target, not a customer outcome |

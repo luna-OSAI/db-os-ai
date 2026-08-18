@@ -81,6 +81,9 @@ The exception is narrow and does not travel:
 - ❌ Do **not** attach them to a named customer, a case study or a specific outcome.
 - ❌ Do **not** use them where a substantiation demand is likely — ad-platform review, a partner agreement, a tender, an investor document.
 
+**A sixth site claim — "Save hundreds of hours and thousands of dollars per month" — is NOT covered
+by D2 and must not be reused.** It is recorded in the register as C6, pending its own decision.
+
 Full register and exact wording: [claims register](../05-proof-and-evidence/claims-register.md).
 The substantiation gap stays open in the [enrichment roadmap](../00-start-here/ENRICHMENT-ROADMAP.md)
 until evidence exists.

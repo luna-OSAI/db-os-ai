@@ -25,7 +25,7 @@ Every gap, ranked by **how much closing it improves the database** — not by ho
 **Where it lands:** [voice-of-customer](../03-audience-and-icp/voice-of-customer.md)
 
 ### 2 · Substantiate — or retire — the five published site claims
-**Closes:** the substantiation gap on C1–C5
+**Closes:** the substantiation gap on C1–C5, and the open question on C6
 **Why it matters:** "Scale Your Business 10× Faster", "Join 100s of entrepreneurs", "$50,000+ pre-built business kit", "We cover $5,000/m in plugins" and "Loved By All Industries" are live on the website with **nothing behind them.** They are approved for reuse by decision, and that decision does not change the ACL position: under s18 and s29 a business should be able to substantiate what it publishes.
 **Four of the five are cheap to close:** a customer count, a plugin cost breakdown, a kit valuation methodology, and five reviews.
 **Where it lands:** [claims-register](../05-proof-and-evidence/claims-register.md)
@@ -82,6 +82,10 @@ Every gap, ranked by **how much closing it improves the database** — not by ho
 | 16 | Brand and design specification — logo, palette, typography | G8 |
 | 17 | Decide the AI-disclosure position | G15 — also a strong article |
 | 18 | Find a statistic on all-in-one platforms never being configured | Would be the best evidence available for Pillar 3 |
+| 19 | **Write product-level files for Chat Agent and Voice Agent** | Surfaced by the cold-start test. The site sells them as named products; the database only models them as capability modules. A hero can be assembled; a full product page cannot |
+| 20 | **Resolve whether voice agents are included in the $97/$297/$497 subscription** | `offer-overview` prices voice as a done-for-you build; `platform-capabilities` lists it as a platform module. A product page cannot avoid this |
+| 21 | **Decide what to do about partner copy already live on the site** | The database gates the partner assets it generates, while "Unlock the Advantages of Becoming a Global Brand Partner" and the full commission table are already published. The gate only applies going forward |
+| 22 | **Define the consent basis for the email list** | The email playbook requires consent; nothing records what list exists or what people opted in for. Blocks actually sending, not just drafting |
 
 ---
 

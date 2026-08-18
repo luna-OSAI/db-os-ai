@@ -43,7 +43,8 @@ The strongest material available. **Specificity is the proof.**
 
 ## Tier C — approved published claims
 
-C1–C6 in the [claims register](claims-register.md). Usable per D2, **within the stated bounds**.
+C1–C5 in the [claims register](claims-register.md). Usable per D2, **within the stated bounds**. C6 is
+recorded but **not approved for reuse**.
 
 ## Tier D — does not exist
 

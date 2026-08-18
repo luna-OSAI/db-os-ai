@@ -62,7 +62,7 @@ For a business with no results data, **specificity is the proof.**
 
 ## Registered site claims — bounded
 
-C1–C6 in the [claims register](../05-proof-and-evidence/claims-register.md). Usable as published per
+C1–C5 in the [claims register](../05-proof-and-evidence/claims-register.md). Usable as published per
 D2. **Not in ads, not attached to a customer, not escalated, not used as arithmetic inputs.**
 
 ## Never

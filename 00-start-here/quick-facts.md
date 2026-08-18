@@ -74,7 +74,7 @@ Funnels — Melbourne) · Luna Kadusale (Marketing Admin — Philippines).
 |---|---|
 | 23% of companies never respond to a web enquiry; average first response 42 hours | HBR 2011, 2,241 companies |
 | 5-minute reply = 21× more likely to qualify vs 30 minutes | MIT/InsideSales, Oldroyd 2007 |
-| HubSpot Marketing Hub Professional: **$890/mo annual + $3,000 onboarding** | hubspot.com, 2026-08-18 |
+| HubSpot Marketing Hub Professional: **$890/mo annual + $3,000 onboarding** | hubspot.com, 2026-08-18. **⚠️ Tier 2 approval. Always name the plan and the date** |
 | 25–30% of SaaS licences unused | 2026 SaaS compilations |
 
 ---

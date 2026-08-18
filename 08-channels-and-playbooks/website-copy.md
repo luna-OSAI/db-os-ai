@@ -71,10 +71,10 @@ Login**, with plans at $97 / $297 / $497.
 
 ## The registered site claims
 
-C1–C6 in the [claims register](../05-proof-and-evidence/claims-register.md) — "10× Faster", "Join
-100s of entrepreneurs", "$50,000+ pre-built business kit", "We cover $5,000/m in plugins", "Loved By
-All Industries", "Save hundreds of hours" — are **approved for reuse on the site as published**, per
-decision D2.
+C1–C5 in the [claims register](../05-proof-and-evidence/claims-register.md) — "10× Faster", "Join
+100s of entrepreneurs", "$50,000+ pre-built business kit", "We cover $5,000/m in plugins" and "Loved
+By All Industries" — are **approved for reuse on the site as published**, per decision D2. **C6 is
+not approved.**
 
 **Do not escalate them, do not attach them to a customer, and do not build arithmetic on them.**
 When a page needs proof, reach for Tier B mechanism proof first — it is more persuasive to this

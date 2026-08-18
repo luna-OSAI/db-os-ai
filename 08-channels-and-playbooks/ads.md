@@ -73,7 +73,7 @@ Three lines. That is the whole ad.
 
 ## The registered claims in ads — extra caution
 
-C1–C6 are approved for OS A.I's own marketing. **Ads are the one place to avoid them.** Ad platforms
+C1–C5 are approved for OS A.I's own marketing. **Ads are the one place to avoid them.** Ad platforms
 demand substantiation on review, and an unsupported "10× Faster" or "Join 100s of entrepreneurs" is
 a likely rejection and a possible account-level flag. [Guardrails](../07-compliance-and-guardrails/guardrails.md)
 already excludes contexts where substantiation will be demanded — **this is that context.**

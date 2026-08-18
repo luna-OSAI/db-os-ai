@@ -75,7 +75,9 @@ recorded as verified-as-published with no substantiation on file:
 
 - "We cover $5,000/m in plugins"
 - "$50,000+ pre-built business kit"
-- "Save hundreds of hours and thousands of dollars per month"
+
+**Not approved:** "Save hundreds of hours and thousands of dollars per month" is on the site but was
+not part of the D2 decision. Recorded as C6, pending its own approval. Do not reuse it.
 
 Full handling and exact wording in the [claims register](../05-proof-and-evidence/claims-register.md).
 
