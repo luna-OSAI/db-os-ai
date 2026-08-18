@@ -27,7 +27,7 @@ This is the company's own rule, stated as FIRM. Full handling: [white-label disc
 
 ### 2 · Never invent a fact about OS A.I
 No client counts, revenue figures, results, timelines-to-result, retention rates, partner earnings
-or testimonials beyond what is in [proof and evidence](../05-proof-and-evidence/README.md).
+or testimonials beyond what is in [proof and evidence](../05-proof-and-evidence/proof-and-evidence-bank.md).
 **Missing is missing.** The correct output is "this isn't in the database" — never a plausible
 reconstruction. See [what we cannot claim](../05-proof-and-evidence/what-we-cannot-claim.md).
 

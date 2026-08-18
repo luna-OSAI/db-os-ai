@@ -20,7 +20,7 @@ the piece, and nothing that is not approved.
 
 1. **Pick one cluster** from [11-topic-clusters](../11-topic-clusters/README.md)
 2. **Pick one article idea** from that cluster's section 7
-3. **Copy the template below** into `12-content-engine/briefs/YYYY-MM-DD-slug.md`
+3. **Copy the template below** into `12-content-engine/briefs/YYYY-MM-DD-slug.md` — its `../../` links resolve correctly from that folder
 4. **Fill every field.** A field you cannot fill is a signal — usually that the evidence does not exist
 5. **Write to the brief**, then run the pre-publish checklist
 6. **Route for approval** per the tier the brief identifies

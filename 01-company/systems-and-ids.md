@@ -40,7 +40,7 @@ What OS A.I runs on. **Incomplete — see the gaps at the bottom.**
 - **Chat Agent** — the chat product
 - **Voice Agent** — the voice product
 - **Free Blueprints** — the lead magnet surface
-- **A.I News** — the content surface. **This is where article output lands.** See [content engine](../12-content-engine/README.md)
+- **A.I News** — the content surface. **This is where article output lands.** See [the content engine](../12-content-engine/idea-bank.md)
 - **Login** — customer portal
 - Pricing section: Pro · Partner · Platinum
 
