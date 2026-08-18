@@ -10,7 +10,7 @@ owner: Tumai
 tags: [schema, entity-model, s3, design]
 ---
 
-# Entity model — db-oscale-ai
+# Entity model — db-os-ai
 
 **Status: APPROVED 2026-08-18.** Decisions D1, D2, D3 and D6 confirmed by Tumai. D4 and D5 were not
 adopted as hard rules and remain guidance only.

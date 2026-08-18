@@ -1,4 +1,4 @@
-# db-oscale-ai
+# db-os-ai
 
 **The grounded source of truth for OS A.I** — a truth-tiered, compliance-first marketing and content
 database that an AI reads before it writes anything.
