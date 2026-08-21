@@ -40,6 +40,9 @@ Read in this order before writing:
 7. `05-proof-and-evidence/claims-register.md` and `what-we-cannot-claim.md`
 8. `02-offer-and-pricing/platform-capabilities.md` — modules 1, 7, 9, 10, 11
 9. `09-content-banks/ctas.md` — cold/problem-aware section
+10. `07-compliance-and-guardrails/acl-and-consumer-law.md` — Spam Act and Privacy Act rows, for the TL;DR legal bullet
+11. `10-faq-and-objections/objections-smb.md` and `11/cluster-crm.md` §5 — source material for the six FAQs
+12. The **OS A.I blog template**, cluster-tab layout — the section order the draft has to hit
 
 ## 3 · The argument
 
@@ -63,6 +66,12 @@ Only these. **Everything else is out of bounds.**
 | Done-for-you build exists because setup is the hard part | `02/done-for-you-services.md`, `04/messaging-pillars.md` Pillar 3 | verified |
 | CRM features are commoditised; OS A.I's are not better | `11/cluster-crm.md` §2 | verified |
 | Widely-quoted CRM failure rates do not trace to a primary source | `11/cluster-crm.md` §4 | verified |
+| A consolidated customer record is a collection of personal information under the Privacy Act 1988 / APPs — collection notice, purpose limitation, secure handling | `07/acl-and-consumer-law.md`, `06/market-context-au.md` | verified |
+| A message an AI agent sends is still a commercial electronic message under the Spam Act 2003 — consent, sender identification, functional unsubscribe | `07/acl-and-consumer-law.md`, `07/guardrails.md` | verified |
+| AI agents identify as AI when asked and never claim to be a person | `07/guardrails.md`, `10/chat-agent-spec.md` | verified |
+
+The last three are new to this version. They are used in the TL;DR legal bullet and in FAQ 6, both of
+which are template slots the original prose draft had no equivalent for.
 
 ## 5 · Approved evidence
 
@@ -86,14 +95,48 @@ The speed-to-lead stats in [stats-bank](../../06-research-and-market/stats-bank.
 
 ## 7 · Structure
 
-| Section | Job | Words |
+**The draft follows the OS A.I blog template**, cluster-tab layout — the same section order every
+cluster article on the site uses. Template slots are fixed; the body sections inside them are this
+piece's own.
+
+| # | Template slot | Job | Words |
+|---|---|---|---|
+| 1 | H1 | The title, as-is | — |
+| 2 | Hero image | 16:9, min 1920×1080, WebP + JPG, under 250KB. Spec, direction and alt text in the draft | — |
+| 3 | Audio | Narrated version of the full article. Embed slot | — |
+| 4 | `[PROBLEM / CORE ISSUE]` | Three bullets: why it happens, what removes the friction, the business outcome | 120–160 |
+| 5 | `Your TL;DR` | Seven fixed bullets: insight · evidence · data gap · legal · what it does · what it does not do · the trap | 350–450 |
+| 6 | Body — the cost isn't the empty CRM | Opening scene plus the invisible cost. Nothing compounds. No rhetorical question | 300–400 |
+| 7 | **HTML/CSS card 1** | What the stale record costs. Four uncounted losses | — |
+| 8 | Body — a system that needs willpower is a system with a design flaw | The reframe, plus the refusal to quote an unsourced stat | 200–300 |
+| 9 | **HTML/CSS card 2** | The trade: what it asks now vs what it pays back later | — |
+| 10 | Body — where the data comes from | The mechanism. Five fragmented systems vs one place | 250–350 |
+| 11 | **HTML/CSS card 3** | One customer, one fortnight. Separate tools vs one place | — |
+| 12 | Body — what this doesn't fix | **The honest limit.** Undefined process, offer problems, setup cost | 100–150 |
+| 13 | Body — the test | One CTA, self-check | 80–120 |
+| 14 | **HTML/CSS card 4** | The self-check as a card. No form, no email capture | — |
+| 15 | `FAQ's` | Six questions from cluster §5 and objections-smb, including one on Privacy Act / Spam Act exposure | 500–650 |
+| 16 | **FAQ HTML/CSS block** | Native `<details>` accordion, no JavaScript, same six answers compressed | — |
+| 17 | `SUGGESTED READING/SOURCES` | Five links. See section 7a | — |
+
+**Body word count is 1,079** — inside the 900–1,400 standard band. The TL;DR, FAQ block and sources
+list are template furniture and sit outside that count; the full page runs to roughly 2,300 words.
+
+**Card colours are placeholders.** Each block declares its palette as CSS custom properties at the
+top of its scoped `<style>`. Swap them for the real OS A.I values before publishing. No brand palette
+is recorded in this database — logged as a gap.
+
+### 7a · Where the template and this brief disagree
+
+Two template slots assume a piece that cites statistics. This one does not, deliberately.
+
+| Slot | The conflict | How the draft resolves it |
 |---|---|---|
-| Opening | An abandoned CRM in a tab, dated. No rhetorical question | 100–150 |
-| the cost isn't the empty CRM | Make the invisible cost visible — nothing compounds | 200–300 |
-| a system that needs willpower is a system with a design flaw | The reframe, plus the refusal to quote an unsourced stat | 200–300 |
-| where the data comes from | The mechanism. Five fragmented systems vs one place | 250–350 |
-| what this doesn't fix | **The honest limit.** Undefined process, offer problems, setup cost | 100–150 |
-| the test | One CTA, self-check | 80–120 |
+| TL;DR bullet 2, `[EVIDENCE / RESEARCH]` | Asks for "the strongest credible statistic". Section 5 of this brief is empty on purpose | The bullet reads **"Evidence. Deliberately none"** and states that the piece argues from mechanism. The refusal is the credibility move, and it already appears in the body copy |
+| `SUGGESTED READING/SOURCES` | Asks for "links to support the article with Australian statistics" | The list carries a standing note that **nothing in it is cited as a claim in the copy.** It links the Australian primary sources behind the compliance points (OAIC, Spam Act 2003, two ABS collections) plus one clearly-labelled background reference. No figure from any of them is quoted |
+
+**This needs a call before publish.** If the template's evidence slot is treated as mandatory, this
+piece cannot fill it without breaking [cluster-crm](../../11-topic-clusters/cluster-crm.md) §4.
 
 ## 8 · Objections to pre-empt
 
@@ -131,7 +174,18 @@ From [cluster-crm](../../11-topic-clusters/cluster-crm.md) §5 and [objections-s
 - [x] Approval tier identified and routed
 - [x] Passes: **would Tumai say this out loud without wincing?**
 
+**Template compliance:**
+
+- [x] Every template slot present and in order — H1, hero, audio, problem, TL;DR, body, four card blocks, FAQ, FAQ block, sources
+- [x] All seven TL;DR bullets filled, none left as a placeholder
+- [x] Six FAQs, matching the accordion block
+- [x] Five entries under `SUGGESTED READING/SOURCES`, every URL checked as resolving
+- [x] No lorem ipsum, no `Hello World` card, no `[BODY]` placeholder left in the file
+- [ ] **Card palettes swapped for the real OS A.I brand colours** — blocked, no palette in this database
+- [ ] **Hero image produced to spec** and the audio block embedded
+- [ ] **Evidence-slot conflict resolved** — see section 7a
+
 ## 11 · Sources statement
 
-> Sources: `11-topic-clusters/cluster-crm.md`, `04-voice-and-messaging/messaging-pillars.md`, `03-audience-and-icp/icp-smb-owner.md`, `02-offer-and-pricing/platform-capabilities.md`, `05-proof-and-evidence/what-we-cannot-claim.md`, `09-content-banks/ctas.md`
+> Sources: `11-topic-clusters/cluster-crm.md`, `04-voice-and-messaging/messaging-pillars.md`, `03-audience-and-icp/icp-smb-owner.md`, `02-offer-and-pricing/platform-capabilities.md`, `05-proof-and-evidence/what-we-cannot-claim.md`, `09-content-banks/ctas.md`, `07-compliance-and-guardrails/acl-and-consumer-law.md`, `07-compliance-and-guardrails/guardrails.md`, `10-faq-and-objections/objections-smb.md`, `10-faq-and-objections/chat-agent-spec.md`
 > **Approval: Tier 1** — no competitor named, no new claim, no performance claim, no statistic.
