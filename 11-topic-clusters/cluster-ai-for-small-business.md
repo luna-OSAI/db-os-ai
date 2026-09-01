@@ -5,7 +5,7 @@ type: cluster
 status: approved
 confidence: verified
 source: 6_Business_Plan_OS_AI.md (SMB AI adoption opportunity) · 02-offer-and-pricing/platform-capabilities.md · 07-compliance-and-guardrails/acl-and-consumer-law.md
-as_of: 2026-08-18
+as_of: 2026-09-01
 owner: Tumai
 tags: [cluster, ai, adoption, pillar-4]
 ---
@@ -64,7 +64,7 @@ That is the difference between an AI that talks and an AI that does something.
 | Agent Studio: draft → staging → production, version control, rollback | Verified |
 | Knowledge-base and web-crawler training | Verified |
 | "Scale Your Business 10× Faster" | [Claims register](../05-proof-and-evidence/claims-register.md) C1. Published, unsubstantiated. Usable as written per D2 — **do not escalate, do not attach to an outcome** |
-| SMB AI adoption rates in Australia | **No sourced statistic** (gap). Roadmap |
+| Australian AI adoption: ~12% of all businesses, ~11% of small and micro, 2024–25 | **ABS, released 25 June 2026.** [stats-bank](../06-research-and-market/stats-bank.md). Attribution mandatory in the copy. **Not a measure of AI agents** |
 
 ## 5 · Common objections
 

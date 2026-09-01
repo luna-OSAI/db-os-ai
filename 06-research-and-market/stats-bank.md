@@ -6,7 +6,7 @@ status: approved
 confidence: verified
 source: Individual sources named per row
 researched: 2026-08-18
-as_of: 2026-08-18
+as_of: 2026-09-01
 owner: Tumai
 tags: [research, statistics, bank, evidence]
 ---
@@ -78,10 +78,35 @@ Full context: [competitor-hubspot](competitor-hubspot.md).
 
 ---
 
+## Australian AI adoption — evidence for Pillar 4
+
+| Stat | Source | Researched |
+|---|---|---|
+| **~12% of Australian businesses** reported using AI in the workplace in **2024–25** | ABS, *Business adoption of Artificial Intelligence accelerates in 2024–25*, released 25 June 2026 | 2026-09-01 |
+| **Small and micro businesses: ~11%.** Medium: **22%** (from 3%). Large: **35%** (from 9% in 2021–22) | same | 2026-09-01 |
+| Innovation-active small businesses: **19%** vs **4%** for non-innovation-active | same | 2026-09-01 |
+| Top industries: Information, media and telecommunications **38%**; Professional, scientific and technical services **24%**; Financial and insurance services **24%** | same | 2026-09-01 |
+
+URL: <https://www.abs.gov.au/media-centre/media-releases/business-adoption-artificial-intelligence-accelerates-2024-25>
+Sample: nearly 7,000 Australian businesses.
+
+**Population note — step 4 of [Adding a stat](#adding-a-stat).** This counts *any* AI use by *any*
+Australian business, from a generative-text tool upward. **It is not a measure of AI agents**, and it
+must never be presented as one. The right use is scale-setting: most Australian small businesses have
+not adopted AI at all yet.
+
+**Rules:**
+
+- Attribute as **ABS**, with the **2024–25** reference period and the **25 June 2026** release date, in the copy itself.
+- **Never round 11% up to "one in eight"** or otherwise restate it into a bigger-sounding figure.
+- Vendor and industry trackers reporting Australian SMB AI adoption in the **40–70%** range are self-selecting samples measuring "used AI in some form". **They are not interchangeable with this figure and must not be blended with it.** Where the contrast is useful, name both and say why they differ.
+- This is a primary source from a national statistical agency, which makes it the strongest external evidence in this database after the speed-to-lead set.
+
+---
+
 ## Gaps — statistics that would strengthen the argument but have not been researched
 
 - Australian SMB software spend specifically
-- Australian SMB AI adoption rates
 - Cost of context-switching, with a primary source
 - SMB churn attributable to poor onboarding
 - Missed-call statistics for service businesses
