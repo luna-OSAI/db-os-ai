@@ -157,6 +157,8 @@ Every file, what it holds, and when to load it.
 | [content-standards](../12-content-engine/content-standards.md) | The five rules, formats, openings |
 | [idea-bank](../12-content-engine/idea-bank.md) | Every article idea, incl. contrarian and blocked |
 | [keyword-map](../12-content-engine/keyword-map.md) | **`assumed`** — structure, not an SEO plan |
+| [briefs/](../12-content-engine/briefs/) | One brief per commissioned article, `YYYY-MM-DD-slug.md` |
+| [articles/](../12-content-engine/articles/) | Approved article copy, same filename as its brief. Frontmatter carries `approval_tier`, `approved_by` and the live URL |
 
 ## 99-source-material
 
