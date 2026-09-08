@@ -5,7 +5,7 @@ type: cluster
 status: approved
 confidence: verified
 source: 6_Business_Plan_OS_AI.md problem 2 · 02-offer-and-pricing/what-we-replace.md · 06-research-and-market/stats-bank.md
-as_of: 2026-08-18
+as_of: 2026-09-02
 owner: Tumai
 tags: [cluster, software-sprawl, tools, subscriptions, pillar-2]
 ---
@@ -54,13 +54,17 @@ are the problem is both untrue and easily rebutted by a reader who likes them.
 
 | Evidence | Status |
 |---|---|
-| Average company runs **106 SaaS apps**, down from 130 in 2022 | [Stats bank](../06-research-and-market/stats-bank.md). **Company-wide, not SMB — never present as an SMB figure** |
-| **25–30% of SaaS licences unused or underutilised** | Stats bank. The most useful of the three — the reader can check it against their own stack |
+| Apps per organisation **rising again, up 11% year on year**; mid-market **116 → 164 in one year**; the consolidation era is over | [Stats bank](../06-research-and-market/stats-bank.md), BetterCloud *2026 State of SaaS*. **Company-wide, not SMB — never present as an SMB figure** |
+| **36% of SaaS licences go unused** against recommended utilisation | Stats bank, Zylo *2026 SaaS Management Index*. The most useful row — the reader can check it against their own stack |
+| Only **56% of apps in use carry IT approval** | Stats bank, BetterCloud 2026. Nobody approved the stack. Company-wide |
+| **10%** of Australian businesses actively collect or analyse data to make decisions, **6%** use predictive analysis, 2024–25 | Stats bank, **ABS *Characteristics of Australian Business***, released 25 June 2026. All businesses, not SMB. Attribution mandatory in the copy |
 | Named replacement map across 10 categories | [What we replace](../02-offer-and-pricing/what-we-replace.md). Verified |
-| Replaces 8–12 tools · cuts costs 50–70% · stack costs $500–1,000/mo | **`inferred`** — company estimates. Use as position, never as promise |
+| Replaces 8–12 tools · cuts costs 50–70% · stack costs $500–1,000/mo | **`inferred`** — company estimates. Use as position, never as promise, and **label it an estimate in the copy** |
 
-**The direction is the argument.** SaaS counts peaked in 2022 and are falling as businesses
-consolidate. OS A.I is on the right side of a trend, which is a stronger claim than any single number.
+**The mechanism is the argument, not the direction.** The old line here — that SaaS counts peaked in
+2022 and are falling — is contradicted by the 2026 reports and must not be reused. What holds is
+that stacks grow by default and shrink only while somebody is paying attention. That transfers to a
+four-person business; the app counts do not.
 
 ## 5 · Common objections
 
@@ -82,15 +86,15 @@ consolidate. OS A.I is on the right side of a trend, which is a stronger claim t
 
 ## 7 · Article ideas
 
-| Title | Angle | Intent | Voice |
-|---|---|---|---|
-| **Add up your software bill. The number isn't the problem** | Sets up the seams argument by defusing the obvious one | Awareness | Tumai |
-| **Eleven good tools is not a good system** | The core argument, stated plainly | Awareness | Tumai |
-| **The audit: every tool, what it costs, what it duplicates** | Practical. Doubles as a lead magnet | Consideration | Ariki |
-| **Why your CRM doesn't know your customer** | The same person as five records | Awareness | Tumai |
-| **What we actually replaced for one client** | **Blocked** — needs a real client. Roadmap item | Consideration | Ariki |
-| **The tools you're paying for and not using** | Built on the 25–30% unused-licence stat | Awareness | Tumai |
-| **When consolidation is the wrong answer** | Contrarian. Argues *against* the product in specific cases. Builds enormous credibility | Consideration | Tumai |
+| Title | Angle | Intent | Voice | Status |
+|---|---|---|---|---|
+| **Add up your software bill. The number isn't the problem** | Sets up the seams argument by defusing the obvious one | Awareness | Tumai | Idea |
+| **Eleven good tools is not a tech stack** | The core argument, stated plainly | Awareness | Tumai | **WRITTEN 2026-09-02** — [article](../12-content-engine/articles/2026-09-02-eleven-good-tools-is-not-a-tech-stack.md) · [brief](../12-content-engine/briefs/2026-09-01-eleven-good-tools-is-not-a-tech-stack.md) |
+| **The audit: every tool, what it costs, what it duplicates** | Practical. Doubles as a lead magnet | Consideration | Ariki | Idea. The five-minute audit card in the tech-stack article is the seed |
+| **Why your CRM doesn't know your customer** | The same person as five records | Awareness | Tumai | Idea. Overlaps the tech-stack article's opening — re-angle before writing |
+| **What we actually replaced for one client** | **Blocked** — needs a real client. Roadmap item | Consideration | Ariki | Blocked |
+| **The tools you're paying for and not using** | Built on Zylo's 36% unused-licence figure | Awareness | Tumai | Idea |
+| **When consolidation is the wrong answer** | Contrarian. Argues *against* the product in specific cases. Builds enormous credibility | Consideration | Tumai | Idea. The tech-stack article's honest-limit section is a partial down payment |
 
 ## Related
 

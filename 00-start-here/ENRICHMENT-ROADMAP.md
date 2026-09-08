@@ -5,7 +5,7 @@ type: system
 status: approved
 confidence: verified
 source: Derived from GAP-LIST.md, the S9 audit, and every file marked inferred or assumed
-as_of: 2026-08-18
+as_of: 2026-09-02
 owner: Tumai
 tags: [roadmap, gaps, enrichment, priorities]
 ---
@@ -75,7 +75,7 @@ Every gap, ranked by **how much closing it improves the database** — not by ho
 |---|---|---|
 | 10 | Keyword research and Search Console access | G14 — turns [keyword-map](../12-content-engine/keyword-map.md) from `assumed` into a plan |
 | 11 | Competitor research: 2–3 AU GHL resellers, Keap, ActiveCampaign, 2 AU agencies | G6 — [competitor-landscape](../06-research-and-market/competitor-landscape.md) is currently reasoning, not research |
-| 12 | Trace the SaaS-sprawl statistics to primary sources | The [stats bank](../06-research-and-market/stats-bank.md) currently cites aggregators |
+| 12 | ~~Trace the SaaS-sprawl statistics to primary sources~~ **DONE 2026-09-02** | Closed. The [stats bank](../06-research-and-market/stats-bank.md) now cites BetterCloud *2026 State of SaaS* and Zylo *2026 SaaS Management Index* directly. The three aggregator rows are retired in place. Note the direction reversed: app counts are rising again |
 | 13 | Confirm what "Free Blueprints" actually contains | It is live in the site nav and undocumented |
 | 14 | Record systems and IDs — GHL location, calendars, pipelines, forms | G9 — blocks any live integration |
 | 15 | Write the disqualifier list from three real bad-fit clients | G11 — currently reasoned |
