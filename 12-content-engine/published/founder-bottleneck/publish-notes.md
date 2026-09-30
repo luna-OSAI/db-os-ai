@@ -16,11 +16,22 @@ Paste-ready body: [`body.html`](body.html)
 
 ## How to publish
 
-1. Blog builder → **Write Manually**
-2. Toolbar → the **`<>`** button (code view), right of the eye icon
-3. Paste the entire contents of `body.html`, then switch back out of code view
-4. **Continue** → fill the fields below
-5. Preview on desktop and phone before publishing
+GHL's Insert custom code field has a length limit and silently drops what does
+not fit, so the body ships pre-split into ten pieces in `paste-chunks/`. Each is
+under 9,100 characters and is valid HTML on its own.
+
+1. Blog builder → click into the canvas → Ctrl+A, Delete, so it starts empty
+2. Toolbar → the **`<>`** button → paste `paste-chunks/01.txt` → Insert code
+3. Click **below** the block that just appeared, then `<>` again for `02.txt`
+4. Repeat through `10.txt`, **in order**
+5. **Continue** → fill the fields below
+6. Preview on desktop and phone before publishing
+
+Copy from the `.txt` files, never from `body.html`. An `.html` file renders in
+most previews, and copying a rendered view strips every tag.
+
+`body.html` is the single-file master, kept for reference and for regenerating
+the chunks if the copy changes.
 
 ## The Continue screen
 
