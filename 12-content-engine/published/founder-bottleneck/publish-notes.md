@@ -17,13 +17,13 @@ Paste-ready body: [`body.html`](body.html)
 ## How to publish
 
 GHL's Insert custom code field has a length limit and silently drops what does
-not fit, so the body ships pre-split into ten pieces in `paste-chunks/`. Each is
-under 9,100 characters and is valid HTML on its own.
+not fit, so the body ships pre-split into twelve pieces in `paste-chunks/`. Each is
+under 10,000 characters and is valid HTML on its own.
 
 1. Blog builder → click into the canvas → Ctrl+A, Delete, so it starts empty
 2. Toolbar → the **`<>`** button → paste `paste-chunks/01.txt` → Insert code
 3. Click **below** the block that just appeared, then `<>` again for `02.txt`
-4. Repeat through `10.txt`, **in order**
+4. Repeat through `12.txt`, **in order**
 5. **Continue** → fill the fields below
 6. Preview on desktop and phone before publishing
 
@@ -107,13 +107,10 @@ The prototype carries FAQPage structured data for the eight questions. Rich text
 | Gradient CTA band and button | Kept |
 | Audio overview player | Kept, and the file is already on GHL's CDN so it will play |
 | In-page table of contents | Kept as a static panel at the top, anchors work |
+| Interactive audit scorer | Rebuilt without JavaScript. Clickable 1-5 chips, a running total, and a working Reset |
 | Internal links to the other four posts | Kept |
 
 ## What was lost, and why
-
-**The interactive audit scorer.** It was built entirely by JavaScript, which the blog editor strips. Without it the form renders as an empty box. Replaced with a static ten-row scoring table. The surrounding prose still works because it already tells the reader to add their own scores.
-
-> Worth considering: rebuild the scorer as a **GHL survey** and embed it. It becomes a lead magnet rather than a toy, because you capture the score and the contact instead of the reader keeping both. That is a bigger change than a paste, so it is a separate job.
 
 **Scroll-reveal animation, the reading progress bar, the table-of-contents scroll-spy, the theme toggle, the counting stat numbers, and the audio speed control.** All JavaScript. The stat numbers still display their final values, which was already the no-JS fallback in the prototype.
 
@@ -176,3 +173,27 @@ that field, not the body.
 An in-body image carries no SEO penalty and a small benefit, because it sits in
 the content flow with surrounding text and carries alt text. The snippet has
 the alt text written in. Do not remove it.
+
+## The audit scorer
+
+The prototype's scorer ran on JavaScript, which a blog editor will strip. It has
+been rebuilt with none: radio inputs styled as chips, `:checked` for the blue
+fill, a **CSS counter** that sums the ten answers into the running total, and a
+native `<button type="reset">` for the Reset.
+
+It lives in `paste-chunks/09.txt` on its own, and is also kept standalone in
+[`interactive-audit.txt`](interactive-audit.txt).
+
+Verified by driving it in a browser: ten answers summing to 31 read 31, changing
+one answer from 5 to 1 dropped it to 27, all fives read 50, and Reset returned it
+to 0. Checked at 900px and 390px, where the rows stack and the chips stay at a
+44px touch target.
+
+What it still cannot do is name the reader's three highest areas, which needs
+real arithmetic rather than a counter. The prose underneath already tells them to
+pick their top three, so the instruction survives.
+
+**The upgrade worth considering later:** rebuild it as a GHL survey. Right now the
+reader scores themselves and keeps the answer. As a survey you capture the score
+and the contact, and you walk into the call knowing which three areas they are
+stuck on. That turns the best-engaging thing on the page into a lead magnet.
