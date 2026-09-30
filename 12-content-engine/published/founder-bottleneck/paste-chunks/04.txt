@@ -1,5 +1,16 @@
 <div style="font-family:'Barlow Condensed',sans-serif !important;max-width:68ch !important;margin:0 auto !important">
 <ul style="margin:0 0 24px !important;padding-left:22px !important;color:#007FFF !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important">
+<li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Company direction</span></li>
+<li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Major partnerships</span></li>
+<li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Significant financial commitments</span></li>
+<li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Core positioning</span></li>
+<li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Major hiring decisions</span></li>
+<li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Changes to the offer</span></li>
+<li style="margin:0 !important;color:#007FFF !important"><span style="color:#2D2D2D !important">High-impact commercial decisions</span></li>
+</ul>
+<h3 style="font-family:'Barlow Condensed',sans-serif !important;font-weight:700 !important;font-size:clamp(21px,2.4vw,26px) !important;line-height:1.18 !important;color:#002147 !important;margin:40px 0 16px !important">Remove</h3>
+<p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">Repeatable tasks and decisions that can be handled by a person, a process or a system.</p>
+<ul style="margin:0 0 24px !important;padding-left:22px !important;color:#007FFF !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important">
 <li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Sending reminders</span></li>
 <li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Updating CRM records</span></li>
 <li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Following up with leads</span></li>
@@ -33,8 +44,4 @@
 <p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">That is how experience becomes a system.</p>
 <h2 id="step-4" style="font-family:'Barlow Condensed',sans-serif !important;font-weight:700 !important;font-size:clamp(30px,4vw,44px) !important;line-height:1.06 !important;letter-spacing:-.003em !important;color:#002147 !important;margin:80px 0 24px !important;padding-top:24px !important;border-top:1px solid #DDE5EE !important;scroll-margin-top:90px !important">Step 4: Transfer ownership, not tasks</h2>
 <p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">Delegating a task is not the same as transferring ownership.</p>
-<p style="margin:0 0 12px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:17px !important;line-height:1.5 !important;color:#2D2D2D !important;background:#F4F7FA !important;border:1px solid #DDE5EE !important;border-left:3px solid #007FFF !important;padding:14px 18px !important;border-radius:0 4px 4px 0 !important"><b style="color:#002147 !important;font-weight:700 !important">Task delegation:</b> "Can you follow up with these leads?"</p>
-<p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:17px !important;line-height:1.5 !important;color:#2D2D2D !important;background:#F4F7FA !important;border:1px solid #DDE5EE !important;border-left:3px solid #007FFF !important;padding:14px 18px !important;border-radius:0 4px 4px 0 !important"><b style="color:#002147 !important;font-weight:700 !important">Ownership:</b> "You own lead follow-up for this pipeline. Respond within 15 minutes during business hours, follow the approved sequence, update the CRM, and escalate only when the lead falls outside the defined criteria."</p>
-<p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">The second version gives the person responsibility, authority, a measurable outcome, a defined process and an escalation path. That reduces the number of questions coming back to you.</p>
-<p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">A team that asks permission efficiently is still a team that asks permission. The aim is a team that can make appropriate calls without it.</p>
 </div>

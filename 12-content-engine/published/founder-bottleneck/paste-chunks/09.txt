@@ -1,4 +1,7 @@
 <div style="font-family:'Barlow Condensed',sans-serif !important;max-width:68ch !important;margin:0 auto !important">
+<p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">Few exceptions genuinely need founder involvement. Define what actually qualifies as an escalation, or "just checking" becomes the default operating system.</p>
+<h3 style="font-family:'Barlow Condensed',sans-serif !important;font-weight:700 !important;font-size:clamp(21px,2.4vw,26px) !important;line-height:1.18 !important;color:#002147 !important;margin:40px 0 16px !important">Building systems nobody uses</h3>
+<p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">A documented process only helps if the team follows it. Keep workflows visible, simple, and connected to the tools people already use.</p>
 <div id="limits" style="background:#E4EFFC !important;border:1px solid #DDE5EE !important;border-radius:4px !important;overflow:hidden !important;margin:56px 0 !important;scroll-margin-top:90px !important">
 <div style="height:3px !important;background:linear-gradient(100deg,#6F42C1 0%,#007FFF 100%) !important"></div>
 <div style="padding:30px 30px 32px !important">
@@ -33,9 +36,5 @@
 <details style="border:1px solid #DDE5EE !important;border-radius:8px !important;background:#F4F7FA !important;margin:0 0 10px !important;overflow:hidden !important">
 <summary style="cursor:pointer !important;padding:17px 22px !important;font-family:'Barlow Condensed',sans-serif !important;font-weight:600 !important;font-size:20px !important;line-height:1.3 !important;color:#002147 !important">Is being the founder bottleneck the same as micromanaging?</summary>
 <div style="padding:0 22px 20px !important"><p style="margin:0 !important;font-family:'Barlow Condensed',sans-serif !important;font-size:17.5px !important;line-height:1.55 !important;color:#2D2D2D !important">No, and the difference decides the fix. Micromanaging is a behaviour, which means staying involved in work someone else owns. A founder bottleneck is a structure, where the business routes decisions through one person because it has no other way to resolve them. A founder can stop micromanaging entirely and still be the bottleneck.</p></div>
-</details>
-<details style="border:1px solid #DDE5EE !important;border-radius:8px !important;background:#F4F7FA !important;margin:0 0 10px !important;overflow:hidden !important">
-<summary style="cursor:pointer !important;padding:17px 22px !important;font-family:'Barlow Condensed',sans-serif !important;font-weight:600 !important;font-size:20px !important;line-height:1.3 !important;color:#002147 !important">Does hiring more staff fix the founder bottleneck?</summary>
-<div style="padding:0 22px 20px !important"><p style="margin:0 !important;font-family:'Barlow Condensed',sans-serif !important;font-size:17.5px !important;line-height:1.55 !important;color:#2D2D2D !important">Not on its own. If new team members still need the founder for routine decisions, extra staff can increase the number of requests coming back to you. The underlying process has to change first.</p></div>
 </details>
 </div>
