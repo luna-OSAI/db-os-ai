@@ -296,3 +296,43 @@ Verified in a browser: mid-animation the figures read 640, 15hrs and 8% with
 card opacities of 0.63, 0.07 and 0 (the stagger), settling to the correct six
 values. At 390px the grid computed to a single 348px column with no horizontal
 overflow.
+
+## Accessibility and responsive audit
+
+Run in a browser against the rejoined article, not assumed. Four real defects
+were found and fixed.
+
+### Fixed
+
+| Defect | Was | Now |
+|---|---|---|
+| Flow-diagram arrows | `#007FFF` on the pale panel, **3.56:1**, under the 4.5 AA floor | `#0F52BA`, **6.65:1** |
+| CTA band text | White over `#007FFF` measured **3.83:1** | Navy scrim over the brand gradient, **5.37:1** at the lightest point, up to 7.96 |
+| Contents links | **22px** tap target, under the 24px WCAG 2.5.8 minimum | **34px** |
+| The running total | A CSS counter, which no screen reader can read. A blind user heard "0" whatever they scored | Visual marked `aria-hidden`, with a live region announcing "Total 31 out of 50, 10 of 10 areas scored" |
+
+The band keeps the brand gradient. A translucent navy scrim sits over it rather
+than changing Signal Blue itself, so the colour token is untouched.
+
+### Verified passing
+
+| Check | Result |
+|---|---|
+| Horizontal overflow | None at 320, 360, 390, 414, 568, 768, 1024, 1200, 1440 |
+| Stat grid | 1 column below 560px, 3 across above |
+| Tables on a phone | Scroll inside their own wrapper, page never overflows |
+| Tap targets at 390px | Contents 34px, chips 40px, reset 44px, FAQ rows 86px |
+| Heading order | h2/h3 throughout, no skipped levels. The page h1 is the post title |
+| Form labels | All 50 radios labelled, grouped by area |
+| Keyboard | Tab reaches everything with a visible 2px focus ring, Enter opens an FAQ, arrow keys move between chips |
+| Reduced motion | Counters and fades skip to the end state |
+| Text contrast | Every remaining pair passes AA |
+
+### Known limits
+
+Tables scroll sideways on a phone rather than reflowing. That is the standard
+compromise for a three-column table at 390px and the page itself never
+overflows, but it does mean a swipe to read the right-hand column.
+
+Audited with scripted checks, not a live screen reader. VoiceOver or NVDA on the
+published post is worth ten minutes before this pattern gets reused.
