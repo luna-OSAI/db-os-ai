@@ -241,98 +241,41 @@ in large numbers. The people who do are the buyer, exactly.
 
 ## The "On this page" rail
 
-Above 1200px viewport width the panel leaves the content flow and parks in the
-left gutter as a fixed rail, and a small script highlights the section you are
-currently reading. Below 1200px it stays exactly as before: a static panel at the
-top of the article. All of it lives in `paste-chunks/01.txt`.
+On a wide screen the panel leaves the content flow and sits in the left gutter
+beside the body copy, appearing as the first paragraph reaches the top and
+standing down when the article runs out beside it. On anything narrower it stays
+a static panel at the top of the article. A small script highlights whichever
+section is on screen. All of it lives in `paste-chunks/01.txt` and
+`paste-chunks/12.txt`.
 
-Sticky positioning was not an option. Each chunk is its own code block, so a
+**The position is measured, not guessed.** The script reads the article column's
+real left edge and places the rail 44px clear of it. An earlier version assumed a
+centred column of a fixed width and overlapped the title and hero on the live
+site. If the gutter cannot hold the rail, or the viewport is under 1100px, it
+stays a static panel instead. It re-measures on resize, once fonts have loaded,
+and again after 600ms, because a theme can shift the column after first paint.
+
+Sticky positioning was never an option. Each chunk is its own code block, so a
 sticky element's containing block ends a few hundred pixels down and it would
-unstick immediately. Fixed positioning does not care about the parent's height.
+release immediately.
 
-The script is guarded on `DOMContentLoaded`, because chunk `01.txt` is parsed
-before chunks 2 to 12 exist in the DOM. Without that guard it would find no
-sections and silently do nothing.
+The script is guarded on `DOMContentLoaded`: chunk `01.txt` is parsed before
+chunks 2 to 12 exist, so running earlier would find no sections to track.
 
-Verified at 1400px: the rail held at top 110px, left 90px through the whole
-scroll, and each of `why`, `step-3`, `step-6`, `audit` and `faq` highlighted its
-own link. At 1000px the rail returned to static.
+Verified against a page built like the live one, with a sticky nav, hero, title
+and meta above the article: at 1440px and 1280px the rail is hidden at the top of
+the page, appears as the body copy starts, clears the text column by 44px at its
+closest, and hides again at the end rather than floating over the footer. At
+1100px and 900px it stays static.
 
 ### If it misbehaves on the live site
 
-Two failure modes, both from the page builder rather than this code.
+**Nothing highlights and the panel never moves.** The editor stripped the
+`<script>`. Everything else still works and the panel stays a static list at the
+top of the article, which is the intended fallback.
 
-**The rail scrolls away, or sits in the wrong place.** An ancestor has a
+**The rail sits in the wrong place or scrolls away.** An ancestor has a
 `transform`, `filter` or `will-change`, which makes `position:fixed` resolve
-against that ancestor instead of the viewport. No CSS fix from inside the block.
-
-**Nothing highlights.** The editor stripped the `<script>`. Everything else still
-works, the links still jump, only the highlight is gone.
-
-In both cases the fallback is the same: republish `01.txt` with the `<style>` and
-`<script>` blocks removed, and the panel returns to a static list at the top.
-
-## Stat block effects
-
-The six figures count up from zero when they scroll into view, and the cards
-fade and rise in with a 90ms stagger. Both are driven from the single
-`<style>` + `<script>` block at the end of `paste-chunks/12.txt`, which also
-carries the contents-rail scroll-spy.
-
-The markup holds the final value, so a reader whose browser never runs the
-script sees `2,241` sitting there. The fade is gated behind an `osai-go` class
-that the script puts on `<html>`, so nothing is ever hidden on a page where the
-script did not run. `prefers-reduced-motion: reduce` skips both effects.
-
-**Mobile.** The grid is three across on desktop and drops to one full-width card
-below 560px. Two columns with three cards left an orphan on the bottom row.
-
-The column rule had to move out of the inline style to make that work. An inline
-`!important` outranks a stylesheet `!important`, so while the columns were
-declared on the element the breakpoint could never win. Both rules now live in
-the stylesheet, where normal cascade order applies.
-
-Verified in a browser: mid-animation the figures read 640, 15hrs and 8% with
-card opacities of 0.63, 0.07 and 0 (the stagger), settling to the correct six
-values. At 390px the grid computed to a single 348px column with no horizontal
-overflow.
-
-## Accessibility and responsive audit
-
-Run in a browser against the rejoined article, not assumed. Four real defects
-were found and fixed.
-
-### Fixed
-
-| Defect | Was | Now |
-|---|---|---|
-| Flow-diagram arrows | `#007FFF` on the pale panel, **3.56:1**, under the 4.5 AA floor | `#0F52BA`, **6.65:1** |
-| CTA band text | White over `#007FFF` measured **3.83:1** | Navy scrim over the brand gradient, **5.37:1** at the lightest point, up to 7.96 |
-| Contents links | **22px** tap target, under the 24px WCAG 2.5.8 minimum | **34px** |
-| The running total | A CSS counter, which no screen reader can read. A blind user heard "0" whatever they scored | Visual marked `aria-hidden`, with a live region announcing "Total 31 out of 50, 10 of 10 areas scored" |
-
-The band keeps the brand gradient. A translucent navy scrim sits over it rather
-than changing Signal Blue itself, so the colour token is untouched.
-
-### Verified passing
-
-| Check | Result |
-|---|---|
-| Horizontal overflow | None at 320, 360, 390, 414, 568, 768, 1024, 1200, 1440 |
-| Stat grid | 1 column below 560px, 3 across above |
-| Tables on a phone | Scroll inside their own wrapper, page never overflows |
-| Tap targets at 390px | Contents 34px, chips 40px, reset 44px, FAQ rows 86px |
-| Heading order | h2/h3 throughout, no skipped levels. The page h1 is the post title |
-| Form labels | All 50 radios labelled, grouped by area |
-| Keyboard | Tab reaches everything with a visible 2px focus ring, Enter opens an FAQ, arrow keys move between chips |
-| Reduced motion | Counters and fades skip to the end state |
-| Text contrast | Every remaining pair passes AA |
-
-### Known limits
-
-Tables scroll sideways on a phone rather than reflowing. That is the standard
-compromise for a three-column table at 390px and the page itself never
-overflows, but it does mean a swipe to read the right-hand column.
-
-Audited with scripted checks, not a live screen reader. VoiceOver or NVDA on the
-published post is worth ten minutes before this pattern gets reused.
+against that ancestor rather than the viewport. No fix is possible from inside
+the code block. Republish `01.txt` with the `<style>` removed to force the
+static panel.
