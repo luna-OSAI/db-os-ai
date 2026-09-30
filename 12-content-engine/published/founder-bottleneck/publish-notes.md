@@ -238,3 +238,36 @@ Search Console or Ahrefs before building more around them.
 
 This is a low-volume, high-intent cluster. Nobody searches "founder bottleneck"
 in large numbers. The people who do are the buyer, exactly.
+
+## The "On this page" rail
+
+Above 1200px viewport width the panel leaves the content flow and parks in the
+left gutter as a fixed rail, and a small script highlights the section you are
+currently reading. Below 1200px it stays exactly as before: a static panel at the
+top of the article. All of it lives in `paste-chunks/01.txt`.
+
+Sticky positioning was not an option. Each chunk is its own code block, so a
+sticky element's containing block ends a few hundred pixels down and it would
+unstick immediately. Fixed positioning does not care about the parent's height.
+
+The script is guarded on `DOMContentLoaded`, because chunk `01.txt` is parsed
+before chunks 2 to 12 exist in the DOM. Without that guard it would find no
+sections and silently do nothing.
+
+Verified at 1400px: the rail held at top 110px, left 90px through the whole
+scroll, and each of `why`, `step-3`, `step-6`, `audit` and `faq` highlighted its
+own link. At 1000px the rail returned to static.
+
+### If it misbehaves on the live site
+
+Two failure modes, both from the page builder rather than this code.
+
+**The rail scrolls away, or sits in the wrong place.** An ancestor has a
+`transform`, `filter` or `will-change`, which makes `position:fixed` resolve
+against that ancestor instead of the viewport. No CSS fix from inside the block.
+
+**Nothing highlights.** The editor stripped the `<script>`. Everything else still
+works, the links still jump, only the highlight is gone.
+
+In both cases the fallback is the same: republish `01.txt` with the `<style>` and
+`<script>` blocks removed, and the panel returns to a static list at the top.
