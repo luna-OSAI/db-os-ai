@@ -197,3 +197,44 @@ pick their top three, so the instruction survives.
 reader scores themselves and keeps the answer. As a survey you capture the score
 and the contact, and you walk into the call knowing which three areas they are
 stuck on. That turns the best-engaging thing on the page into a lead magnet.
+
+## The SEO metadata screen, filled
+
+| Field | Value | Length |
+|---|---|---|
+| **URL slug** | `how-to-stop-being-the-founder-bottleneck` | 40 |
+| **Title** | How to stop being the founder bottleneck in your business | 57, under Google's ~60 cutoff |
+| **Alt text** | How to stop being the founder bottleneck, over a photo of a tradesperson stopping mid-job to answer his phone | 109 |
+| **Post description** | Every decision routes through you. How to spot the founder bottleneck, keep the calls only you should make, and systemise the rest. With a scored audit. | 152, under the ~155 cutoff |
+| **Author** | Tumai | Create the author if the dropdown has only Admin |
+| **Category** | Whatever the existing five posts use | Wrong category means it misses the feed |
+| **Status** | Draft | Approval tier is still unsigned |
+
+Alt text describes the photo **and** repeats the words burned into the image.
+Text inside an image is invisible to a screen reader and to Google unless the
+alt carries it.
+
+### Canonical link: check this after saving
+
+The field defaults to `www.oscale.ai/post`. That is a base GHL completes with the
+slug. **Confirm after saving that it reads the full post URL.** If it stays as
+`www.oscale.ai/post`, clear the field completely rather than leave it: a canonical
+pointing at `/post` tells Google this article is a duplicate of the blog index,
+which is an instruction to drop it from results. An empty canonical is safe. A
+wrong one is not.
+
+### Keywords
+
+| Keyword | Why |
+|---|---|
+| `founder bottleneck` | Exact topic match. Carried by the title, the slug, the H1 and the definition panel |
+| `how to stop being the bottleneck in your business` | How people actually phrase it. The title answers the question verbatim, which is what gets pulled into featured snippets and AI answers |
+| `business that runs without me` | From the cluster's own keyword map. Lower volume, highest emotional match to the buyer |
+
+Volume is unverified: this session has no keyword tool and no network access to
+one. These are chosen from `12-content-engine/keyword-map.md`, the cluster file
+and what the copy actually supports, not from live search data. Check them in
+Search Console or Ahrefs before building more around them.
+
+This is a low-volume, high-intent cluster. Nobody searches "founder bottleneck"
+in large numbers. The people who do are the buyer, exactly.
