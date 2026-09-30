@@ -1,0 +1,5 @@
+<div style="font-family:'Barlow Condensed',sans-serif !important;max-width:68ch !important;margin:0 auto 40px !important">
+<span style="display:block !important;width:100% !important;aspect-ratio:16/9 !important;border:1px solid #C4DCF7 !important;border-radius:4px !important;background:#F4F7FA !important;overflow:hidden !important">
+<img src="PASTE-YOUR-GHL-IMAGE-URL-HERE" width="1600" height="900" loading="eager" decoding="async" alt="Founder bottleneck in practice: a mechanic pauses the job to answer a message on his phone" style="display:block !important;width:100% !important;height:100% !important;object-fit:cover !important">
+</span>
+</div>

@@ -150,3 +150,29 @@ Run against [`08-channels-and-playbooks/blog-and-article.md`](../../../08-channe
 - [x] Paragraph lengths vary
 - [x] Sources stated in the copy
 - [ ] Approval tier identified — outstanding, needs Tumai's sign-off before it goes live
+
+## Title and hero image: why they are not in the body
+
+**The title stays out.** The blog template renders the post title as the page's
+`<h1>`, built from the Title field on the Continue screen. That field is what
+search engines read. Putting the title in the body as well gives the page two
+`<h1>` elements and, more to the point, shows the reader the headline twice.
+Google tolerates duplicate H1s; readers notice them. Use the field.
+
+**The hero image depends on the theme.** The Featured Image field does three
+jobs: the thumbnail on the A.I Articles card, the `og:image` for social shares,
+and, on some themes but not all, the image at the top of the post page.
+
+Set the Featured Image first, then preview the post:
+
+| What the preview shows | What to do |
+|---|---|
+| Image at the top of the post | Nothing. It is already there, adding it to the body would show it twice |
+| Title but no image | Insert [`optional-hero-image.txt`](optional-hero-image.txt) as a code block **above** chunk `01.txt`, and swap `PASTE-YOUR-GHL-IMAGE-URL-HERE` for the media-library URL |
+
+Keep the Featured Image set either way. The card and the social preview read
+that field, not the body.
+
+An in-body image carries no SEO penalty and a small benefit, because it sits in
+the content flow with surrounding text and carries alt text. The snippet has
+the alt text written in. Do not remove it.
