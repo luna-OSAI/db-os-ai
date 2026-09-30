@@ -1,5 +1,4 @@
 <div style="font-family:'Barlow Condensed',sans-serif !important;max-width:68ch !important;margin:0 auto !important">
-<p style="margin:0 0 24px !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important;color:#2D2D2D !important">Decisions that genuinely require founder-level judgement.</p>
 <ul style="margin:0 0 24px !important;padding-left:22px !important;color:#007FFF !important;font-family:'Barlow Condensed',sans-serif !important;font-size:18px !important;line-height:1.62 !important">
 <li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Company direction</span></li>
 <li style="margin:0 0 9px !important;color:#007FFF !important"><span style="color:#2D2D2D !important">Major partnerships</span></li>

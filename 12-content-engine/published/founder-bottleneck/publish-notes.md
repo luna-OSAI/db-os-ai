@@ -271,3 +271,28 @@ works, the links still jump, only the highlight is gone.
 
 In both cases the fallback is the same: republish `01.txt` with the `<style>` and
 `<script>` blocks removed, and the panel returns to a static list at the top.
+
+## Stat block effects
+
+The six figures count up from zero when they scroll into view, and the cards
+fade and rise in with a 90ms stagger. Both are driven from the single
+`<style>` + `<script>` block at the end of `paste-chunks/12.txt`, which also
+carries the contents-rail scroll-spy.
+
+The markup holds the final value, so a reader whose browser never runs the
+script sees `2,241` sitting there. The fade is gated behind an `osai-go` class
+that the script puts on `<html>`, so nothing is ever hidden on a page where the
+script did not run. `prefers-reduced-motion: reduce` skips both effects.
+
+**Mobile.** The grid is three across on desktop and drops to one full-width card
+below 560px. Two columns with three cards left an orphan on the bottom row.
+
+The column rule had to move out of the inline style to make that work. An inline
+`!important` outranks a stylesheet `!important`, so while the columns were
+declared on the element the breakpoint could never win. Both rules now live in
+the stylesheet, where normal cascade order applies.
+
+Verified in a browser: mid-animation the figures read 640, 15hrs and 8% with
+card opacities of 0.63, 0.07 and 0 (the stagger), settling to the correct six
+values. At 390px the grid computed to a single 348px column with no horizontal
+overflow.
