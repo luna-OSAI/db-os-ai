@@ -204,5 +204,15 @@ import re
 CSS = re.sub(r'/\*.*?\*/', '', CSS, flags=re.S)      # strip comments
 CSS = re.sub(r'\s*\n\s*', '', CSS)                   # collapse to one line
 CSS = CSS.replace('__FONT__', F)                      # unique token, cannot collide with a colour
+
+# The host theme carries !important on its own element rules, which outrank a
+# plain declaration however specific the selector. A theme rule on ol/ul was
+# enough to drop display:grid and collapse the lead-journey diagram into a
+# stacked list with its horizontal connectors still drawn. Force every
+# declaration rather than guess which ones the theme will contest.
+def _force(m):
+    decls = [d.strip() for d in m.group(1).split(';') if d.strip()]
+    return '{' + ';'.join(d if d.endswith('!important') else d + '!important' for d in decls) + '}'
+CSS = re.sub(r'\{([^{}]*)\}', _force, CSS)
 open('_css.txt', 'w').write(CSS)
 print('stylesheet built:', len(CSS), 'chars')

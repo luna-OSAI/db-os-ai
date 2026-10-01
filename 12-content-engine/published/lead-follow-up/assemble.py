@@ -2,6 +2,7 @@
 import os, glob, re
 from html.parser import HTMLParser
 
+VOID={'br','img','hr','input','meta','link','source','area','base','col','embed','param','track','wbr'}
 CSS = open('_css.txt').read()
 BODY = open('_body.txt').read()
 
@@ -40,7 +41,7 @@ var cnt=document.getElementById("lf-count"),fill=document.getElementById("lf-fil
 msg=document.getElementById("lf-msg"),live=document.getElementById("lf-live");
 meter.hidden=false;
 function sync(){var n=boxes.filter(function(b){return b.checked;}).length;
-cnt.textContent=n+" of "+boxes.length;fill.style.transform="scaleX("+(n/boxes.length)+")";
+cnt.textContent=n+" of "+boxes.length;/* the stylesheet forces every declaration, so a plain inline style loses */fill.style.setProperty("transform","scaleX("+(n/boxes.length)+")","important");
 msg.textContent=n===0?"Nothing checked yet.":n<boxes.length?
 (boxes.length-n)+" still to confirm before you go live.":
 "Everything confirmed. Now run the three edge cases below.";
@@ -118,11 +119,23 @@ for blk in blocks:
     else:
         out.append(blk)
 
-chunks, cur, size = [], [], 0
+# Several markup lines together form one element (a card opens, its list items
+# follow, a later line closes it), so a chunk may only end where nothing is left
+# open. Breaking mid-element ships unbalanced HTML that the editor then repairs
+# however it likes.
+TAG = re.compile(r'<(/?)([a-zA-Z][a-zA-Z0-9]*)\b[^>]*?(/?)>')
+def depth_delta(s):
+    d = 0
+    for close, name, selfclose in TAG.findall(s):
+        if name.lower() in VOID or selfclose: continue
+        d += -1 if close else 1
+    return d
+
+chunks, cur, size, depth = [], [], 0, 0
 for blk in out:
-    if cur and size + len(blk) > LIMIT:
+    if cur and depth == 0 and size + len(blk) > LIMIT:
         chunks.append(cur); cur, size = [], 0
-    cur.append(blk); size += len(blk)
+    cur.append(blk); size += len(blk); depth += depth_delta(blk)
 if cur: chunks.append(cur)
 
 os.makedirs('paste-chunks', exist_ok=True)
@@ -133,7 +146,6 @@ for i, c in enumerate(chunks, 1):
 full = '\n'.join('<div class="lf">\n' + '\n'.join(c) + '\n</div>' for c in chunks)
 open('body.html','w').write(full)
 
-VOID={'br','img','hr','input','meta','link','source','area','base','col','embed','param','track','wbr'}
 class P(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=False); self.st=[]; self.err=[]

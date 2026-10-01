@@ -80,6 +80,26 @@ code field. Everything is scoped under `.lf`, which each chunk wrapper carries.
 It is a quarter of the size and supports what inline styles cannot: `::before`
 bars, `:hover`, `:checked`, media queries and the mobile table stacking.
 
+## The host theme carries !important on its own rules
+
+Every declaration in the stylesheet is forced. That is not belt and braces: a
+theme rule on `ol`/`ul` beat the plain `display:grid` on the lead journey, which
+collapsed the six stages into a stacked list while their horizontal connectors
+kept drawing, running off the side of the panel. A stylesheet `!important` beats
+any amount of selector specificity, so forcing every declaration is the only
+reliable answer.
+
+Two consequences worth remembering:
+
+**Script-set inline styles now need priority too.** An ordinary
+`el.style.transform = ...` loses to a forced stylesheet rule. The checklist
+meter bar sets its width with `setProperty(..., 'important')` for that reason.
+
+**Chunks may only break where nothing is open.** Several markup lines together
+form one element, so the splitter tracks tag depth and ends a chunk at depth
+zero. An earlier version split by line and happened to land on clean boundaries;
+when the stylesheet grew, it cut a card in half.
+
 ## What was lost
 
 **The theme toggle and the reading progress bar.** Both belong to the prototype's
