@@ -136,3 +136,26 @@ The hero `srcset` is malformed in both the `<source>` and the `<img>`: a stray
 files are parsed as junk attributes and never served. Every visitor gets the
 640px image. It does not affect the GHL post, which uses the Featured Image
 field, but it is worth fixing if the prototype stays up.
+
+
+## Device sweep
+
+Run across seventeen viewports in Chromium, portrait and landscape, with a real
+mobile viewport meta: 280x653 (folded phone), 320x568, 360x780, 393x852,
+412x915, 430x932, 852x393 and 915x412 (phones on their side), 744x1133,
+1024x1366 and 1366x1024 (tablets), 1280x800, 1440x900, 1920x1080, 2560x1080,
+1280x500 (short window) and 360x1200 (tall narrow).
+
+**No horizontal page scroll and nothing spilling past the viewport at any of
+them.** Tables and the lead journey keep their own scroll containers, so the
+page body never moves sideways.
+
+The only elements under the 24px tap minimum are inline text links inside a
+sentence, which WCAG 2.5.8 exempts by name. Every control that is not inline
+text clears it: contents links 31px, checklist rows 44px, FAQ rows 60px, the
+call-to-action button 53px.
+
+An earlier sweep reported a one-pixel scroll on one device. That was the test
+harness, not the article: mobile emulation was on without a viewport meta, so
+those rows were quietly laying out at 980px rather than the phone width. With
+the meta in place the result is clean.
