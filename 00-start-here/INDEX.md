@@ -158,6 +158,7 @@ Every file, what it holds, and when to load it.
 | [content-standards](../12-content-engine/content-standards.md) | The five rules, formats, openings |
 | [idea-bank](../12-content-engine/idea-bank.md) | Every article idea, incl. contrarian and blocked |
 | [editorial-calendar](../12-content-engine/editorial-calendar.md) | Q4 2026 schedule. `draft` |
+| [drafts-social-pillar-1](../12-content-engine/drafts-social-pillar-1.md) | October social copy, Pillar 1. `draft` |
 | [keyword-map](../12-content-engine/keyword-map.md) | **`assumed`** — structure, not an SEO plan |
 
 ## 99-source-material

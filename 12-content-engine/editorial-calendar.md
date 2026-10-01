@@ -254,6 +254,7 @@ End of each month, before planning the next:
 
 ## Related
 
+- [drafts — social, Pillar 1](drafts-social-pillar-1.md) — October drafted in full, `draft`
 - [idea bank](idea-bank.md) · [article brief template](article-brief-template.md) · [content standards](content-standards.md)
 - [social](../08-channels-and-playbooks/social.md) · [social distribution](../08-channels-and-playbooks/social-distribution.md)
 - [messaging pillars](../04-voice-and-messaging/messaging-pillars.md) · [stats bank](../06-research-and-market/stats-bank.md)
