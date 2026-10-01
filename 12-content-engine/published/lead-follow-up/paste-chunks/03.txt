@@ -1,0 +1,42 @@
+<div class="lf">
+<style>.lf-btn:hover{background:transparent!important;color:#fff!important}.lf-related{margin:56px 0 0!important;padding-top:24px!important;border-top:1px solid #DDE5EE!important}.lf-related-label{font-size:14px!important;font-weight:600!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#5A6675!important;margin:0 0 16px!important}.lf-related-links{display:flex;flex-direction:column;gap:10px;align-items:flex-start}.lf-related-links a{font-size:17px!important;font-weight:500!important;line-height:1.3!important;color:#2D2D2D!important;text-decoration:none!important;border:1px solid #C4DCF7!important;border-radius:999px!important;padding:10px 18px!important;transition:border-color .15s,color .15s}.lf-related-links a:hover{border-color:#0F52BA!important;color:#0F52BA!important}.lf-go .lf-rev{opacity:0;transform:translateY(18px);transition:opacity .55s cubic-bezier(.2,.7,.2,1),transform .55s cubic-bezier(.2,.7,.2,1)}.lf-go .lf-rev.in{opacity:1;transform:none}.lf-go .lf-kids>*{opacity:0;transform:translateY(12px);transition:opacity .45s cubic-bezier(.2,.7,.2,1),transform .45s cubic-bezier(.2,.7,.2,1);transition-delay:calc(90ms + var(--i,0) * 70ms)}.lf-go .lf-kids.in>*{opacity:1;transform:none}.lf-go .lf-track-fill{transform:scaleX(0);transition:transform 1.1s cubic-bezier(.2,.7,.2,1) .15s}.lf-go .lf-track.in .lf-track-fill{transform:none}.lf-go .lf-dot{transform:scale(0);transition:transform .35s cubic-bezier(.34,1.56,.64,1);transition-delay:calc(.15s + var(--p) * 1.1s)}.lf-go .lf-track.in .lf-dot{transform:none}@media(prefers-reduced-motion:reduce){.lf-go .lf-rev,.lf-go .lf-kids>*,.lf-go .lf-dot{opacity:1!important;transform:none!important;transition:none!important}.lf-go .lf-track-fill{transform:none!important}}.lf-live{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}</style>
+<div id="lf-toc"><p class="lf-rail-title">In this guide</p><ol>
+<li><a href="#listen"><span class="n">&#9654;</span><span>Listen instead</span></a></li>
+<li><a href="#tldr"><span class="n">&mdash;</span><span>The short version</span></a></li>
+<li><a href="#step-1"><span class="n">01</span><span>Map your lead journey</span></a></li>
+<li><a href="#step-2"><span class="n">02</span><span>Put lead data in one CRM</span></a></li>
+<li><a href="#step-3"><span class="n">03</span><span>Build the first response</span></a></li>
+<li><a href="#step-4"><span class="n">04</span><span>Create a follow-up sequence</span></a></li>
+<li><a href="#step-5"><span class="n">05</span><span>Test before going live</span></a></li>
+<li><a href="#limits"><span class="n">&bull;</span><span>The honest limit</span></a></li>
+<li><a href="#faq"><span class="n">?</span><span>Questions</span></a></li>
+<li><a href="#call"><span class="n">&rarr;</span><span>Build it once</span></a></li>
+</ol></div>
+<div class="lf-listen" id="listen"><div class="lf-listen-bar"></div><div class="lf-listen-in"><div class="lf-listen-head"><span class="lf-mark"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:block"><path d="M3 14v-2a9 9 0 0 1 18 0v2"></path><path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2z"></path></svg></span><div><p>Want to listen to this article instead?</p><span>Audio overview &middot; <span id="lf-mins">narrated</span></span></div></div><audio id="lf-audio" controls preload="metadata" src="https://assets.cdn.filesafe.space/LCUeYJ3q8BPlvSWsMlb9/media/6abb5ca0df795f5ccc776c13.m4a">Your browser cannot play audio. <a href="https://assets.cdn.filesafe.space/LCUeYJ3q8BPlvSWsMlb9/media/6abb5ca0df795f5ccc776c13.m4a">Download the narration</a>.</audio></div></div>
+<div class="lf-journey-fig"><div class="lf-panel-bar"></div><div class="lf-journey-in"><div class="lf-journey-title"><span>The lead journey you are about to build</span><b>6 stages</b></div><ol class="lf-journey">
+<li style="--i:0"><span class="node">1</span><span><span class="lbl">New enquiry</span><span class="sub">Any source</span></span></li>
+<li style="--i:1"><span class="node">2</span><span><span class="lbl">Instant response</span><span class="sub">SMS or email</span></span></li>
+<li style="--i:2"><span class="node">3</span><span><span class="lbl">Qualification</span><span class="sub">A few questions</span></span></li>
+<li style="--i:3"><span class="node">4</span><span><span class="lbl">Follow-up</span><span class="sub">Over about a week</span></span></li>
+<li style="--i:4"><span class="node">5</span><span><span class="lbl">Booked</span><span class="sub">Sequence stops</span></span></li>
+<li style="--i:5"><span class="node">6</span><span><span class="lbl">Sales handoff</span><span class="sub">A person takes over</span></span></li>
+</ol><p class="lf-journey-note">Steps 1 to 5 below build this, in order.</p></div></div>
+<p id="lf-start">Most businesses do the opposite. They switch on a tool first and decide what it should do later, which leaves leads slipping through gaps nobody planned for. This guide gives you the order that works, so the system handles the repetitive work and your team spends its time on the conversations that need a person.</p>
+<div class="lf-brief lf-rev" id="tldr"><div class="lf-panel-bar"></div><div class="lf-panel-in"><h2>TL;DR</h2><p class="lf-brief-note">The five steps in one glance</p><ul>
+<li><a href="#step-1"><strong>Step 1:</strong> Map the path from first enquiry to booked appointment before you build anything.</a></li>
+<li><a href="#step-2"><strong>Step 2:</strong> Keep every lead in one CRM with clear ownership and only the pipeline stages you use.</a></li>
+<li><a href="#step-3"><strong>Step 3:</strong> Automate the first response so every enquiry gets a reply straight away, including after hours.</a></li>
+<li><a href="#step-4"><strong>Step 4:</strong> Add a short follow-up sequence over about a week, with a different reason to reply each time.</a></li>
+<li><a href="#step-5"><strong>Step 5:</strong> Test the full journey, including the edge cases, before you go live.</a></li>
+</ul></div></div>
+<div class="lf-step-head lf-rev" id="step-1"><p class="lf-step-mark">Step 1 <span class="lf-dots" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span> <span class="of">of 5</span></p><h2>Map Your Lead Journey</h2></div>
+<p>Automation needs a job to do. Without a mapped journey, you end up automating random tasks that do not connect to a booking.</p>
+<p>Start with the path from first enquiry to booked appointment, and answer five questions:</p>
+<ul class="lf-cells lf-kids" aria-label="Five journey questions"><li class="lf-cell" style="--i:0"><span class="n">1</span><h3>Where does the lead come from?</h3></li><li class="lf-cell" style="--i:1"><span class="n">2</span><h3>What information do you need to capture?</h3></li><li class="lf-cell" style="--i:2"><span class="n">3</span><h3>Who needs to respond?</h3></li><li class="lf-cell" style="--i:3"><span class="n">4</span><h3>What makes a lead qualified?</h3></li><li class="lf-cell" style="--i:4"><span class="n">5</span><h3>What is the next action you want them to take?</h3></li></ul>
+<p>For most service businesses, the journey looks like this:</p>
+<p class="lf-flow lf-rev"><strong>New enquiry &rarr; instant response &rarr; qualification &rarr; follow-up &rarr; appointment booked &rarr; sales handoff</strong></p>
+<p>Write yours on one page. If a step has no owner or no next action, that is a gap, and it is where leads go missing today.</p>
+<div class="lf-step-head lf-rev" id="step-2"><p class="lf-step-mark">Step 2 <span class="lf-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span> <span class="of">of 5</span></p><h2>Put Your Lead Data in One CRM</h2></div>
+<p>Follow-up breaks down when lead information is scattered. Website enquiries sit in one tool, messages in another and appointment details somewhere else. Your team ends up checking platforms, copying details across and trying to remember who needs a reply.</p>
+<p>The fix is one central CRM that every lead source feeds into. OS A.I brings CRM, communication, appointment scheduling, funnels and automation into one connected platform, so lead information moves through the customer journey without constant manual handling.</p>
+</div>
