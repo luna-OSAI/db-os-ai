@@ -104,4 +104,6 @@ argument for what OS A.I sells.
 
 ## Related
 
+- [Social distribution](social-distribution.md) — account architecture, format mix, cadence and
+  distribution. This file covers what a post says; that one covers how it reaches anyone.
 - [Hooks and openers](../09-content-banks/hooks-and-openers.md) · [Idea bank](../12-content-engine/idea-bank.md)

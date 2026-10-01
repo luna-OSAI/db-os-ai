@@ -107,6 +107,7 @@ Every file, what it holds, and when to load it.
 | [newsletter](../08-channels-and-playbooks/newsletter.md) | Weekly newsletter |
 | [sms](../08-channels-and-playbooks/sms.md) | Any SMS |
 | [social](../08-channels-and-playbooks/social.md) | LinkedIn, short-form |
+| [social-distribution](../08-channels-and-playbooks/social-distribution.md) | Account, format mix, cadence, distribution. `draft` |
 | [ads](../08-channels-and-playbooks/ads.md) | Paid — **highest claim risk** |
 | [sales-scripts](../08-channels-and-playbooks/sales-scripts.md) | Discovery calls |
 | [lead-magnets](../08-channels-and-playbooks/lead-magnets.md) | Diagnostics, checklists |
