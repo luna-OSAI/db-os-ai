@@ -72,7 +72,7 @@ A('</ol></div>')
 # audio
 A('<div class="lf-listen" id="listen"><div class="lf-listen-bar"></div><div class="lf-listen-in">'
   '<div class="lf-listen-head"><span class="lf-mark"><svg viewBox="0 0 24 24" width="19" height="19" '
-  'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" '
+  'fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" '
   'style="display:block"><path d="M3 14v-2a9 9 0 0 1 18 0v2"></path>'
   '<path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2z"></path>'
   '</svg></span><div><p>Want to listen to this article instead?</p>'

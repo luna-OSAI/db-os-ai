@@ -42,10 +42,10 @@ CSS = """
 .lf-listen-bar{height:3px;background:linear-gradient(100deg,#6F42C1 0%,#007FFF 100%)}
 .lf-listen-in{padding:20px 22px 22px}
 .lf-listen-head{display:flex;align-items:center;gap:13px;margin:0 0 14px}
-.lf-mark{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:999px;border:1px solid #C4DCF7;color:#0F52BA}
-.lf-mark svg{width:19px;height:19px;min-width:0;max-width:19px;flex:0 0 auto;display:block}
+.lf-mark{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;border:0;background:linear-gradient(100deg,#007FFF 0%,#2A52BE 100%);color:#FFFFFF}
+.lf-mark svg{width:21px;height:21px;min-width:0;max-width:21px;flex:0 0 auto;display:block}
 .lf-listen-head p{margin:0!important;font-size:19px!important;font-weight:600!important;line-height:1.25!important;color:#002147!important}
-.lf-listen-head span{display:block;margin-top:3px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5A6675}
+.lf-listen-head>div>span{display:block;margin-top:3px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#5A6675}
 .lf-listen audio{display:block;width:100%;height:40px}
 
 /* lead journey */

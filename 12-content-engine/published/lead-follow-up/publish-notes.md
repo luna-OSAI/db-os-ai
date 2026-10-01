@@ -159,3 +159,24 @@ An earlier sweep reported a one-pixel scroll on one device. That was the test
 harness, not the article: mobile emulation was on without a viewport meta, so
 those rows were quietly laying out at 980px rather than the phone width. With
 the meta in place the result is clean.
+
+## The audio mark
+
+The prototype for this article uses the OS A.I logo at 36px beside the title, not
+a headphone. The ringed headphone was carried over from the founder bottleneck
+article, whose prototype does use one.
+
+What ships is a filled brand disc with a white headphone glyph: closer in weight
+to the logo mark the prototype intends, and it needs no asset to be uploaded.
+To match the prototype exactly, swap the `<span class="lf-mark">` for an `<img>`
+of the logo from the GHL media library and drop the `.lf-mark` background.
+
+A selector bug sat underneath this the whole time. `.lf-listen-head span` was
+written for the subtitle, but the icon's wrapper is a span in the same block, and
+at equal weight the longer selector won. The glyph was rendering in muted grey
+rather than brand blue, which is why it read as unfinished even once its size was
+correct. The rule is now `.lf-listen-head>div>span`.
+
+The two articles' audio blocks now differ: a filled disc here, a hairline ring on
+the founder bottleneck piece. Each matches its own prototype. Worth unifying if
+they are meant to look like one series.
