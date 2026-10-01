@@ -157,6 +157,7 @@ Every file, what it holds, and when to load it.
 | [worked-example-brief](../12-content-engine/worked-example-brief.md) | A completed brief, end to end |
 | [content-standards](../12-content-engine/content-standards.md) | The five rules, formats, openings |
 | [idea-bank](../12-content-engine/idea-bank.md) | Every article idea, incl. contrarian and blocked |
+| [editorial-calendar](../12-content-engine/editorial-calendar.md) | Q4 2026 schedule. `draft` |
 | [keyword-map](../12-content-engine/keyword-map.md) | **`assumed`** — structure, not an SEO plan |
 
 ## 99-source-material

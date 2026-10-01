@@ -84,4 +84,5 @@ consenting client unlocks the best content OS A.I could publish.
 
 ## Related
 
+- [Editorial calendar](editorial-calendar.md) — when these ship. Q4 2026, `draft`
 - [Topic clusters](../11-topic-clusters/README.md) · [Article brief template](article-brief-template.md)
